@@ -1,0 +1,17 @@
+.jumbotron{
+    background-image: url("../img/flower.jpg");
+    color:#75C9E8;
+}
+/*navbar css below*/
+button{
+    float:right;
+}
+
+.navbar{
+    background-color:purple;
+    
+}
+
+.navbar-toggle{
+    background-color:#75C9E8 ;
+}
