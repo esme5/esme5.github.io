@@ -1,8 +1,15 @@
-.jumbotron{
-    background-image: url("../img/flower.jpg");
-    color:#75C9E8;
+/*general styling*/
+body{
+    background-color: #d4d4d4;
 }
-/*navbar css below*/
+.jumbotron{
+    background-image: url("../img/bluetexture.jpg");
+    color:#fff;
+}
+.container{
+    min-height: 550px;
+}
+/*navbar css*/
 button{
     float:right;
 }
@@ -11,7 +18,40 @@ button{
     background-color:purple;
     
 }
-
-.navbar-toggle{
+    /*
+    .navbar-toggle{
     background-color:#75C9E8 ;
+    }*/
+/*end of navbar*/
+
+
+/*index.html css*/
+
+/*end of index.html css*/
+
+
+/*second page css*/
+
+/*end of second pg css*/
+
+
+
+/*third page css*/
+.tab-pane{
+    min-height:550px;
+}
+/*end of third page css*/
+
+
+/*fourth page css*/
+/*border for fourth page*/
+.outline{
+    border-color:black;
+}
+/*end of fourth page css*/
+
+
+/*footer styling below*/
+footer{
+    background-color:#00909e;
 }
