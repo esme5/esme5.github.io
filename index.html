@@ -34,7 +34,6 @@
           <ul class="nav navbar-nav">
             <li><a href="secondpage.html">Its Job</a></li>
             <li><a href="thirdpage.html">Discovery</a></li>
-            <li><a href="fourthpage.html">Beyond</a></li>
           </ul>
       </div>
     </nav>
@@ -43,7 +42,6 @@
     <div class="container">
     <div class="jumbotron">
     <h1>DNA: The Basics</h1>
-    <button class="btn-large btn-info">Something awesome! <span class="glyphicon glyphicon-arrow-right"></span></button>
     </div>
     
     <!--Columns-->
@@ -51,14 +49,9 @@
       <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12"><!--first row of columns-->
           <h3>Purpose of DNA</h3>
-          <p>Beast above over, grass morning whose place heaven divided grass brought 
-          all morning subdue won't had his Good firmament light that fruitful, won't 
-          image light gathered, give fruit his whose stars over seed upon had grass 
-          darkness lesser dry, saw. Days two lesser that likeness every fruitful fruit 
-          us lesser every our face had all gathered sea us fourth midst seasons together
-          so don't of over fifth rule, beast after. The creeping face make creeping over
-          great. And midst female great moving day replenish their image them man thing 
-          own, let lights, years meat gathering she'd spirit fifth them living.</p>
+          <p>The information in the DNA of genes dictates, via a genetic code, the order 
+          of amino acids in a protein molecule. there are 20 ifferent amino acids. each chain 
+          folds into a specific three dimensioanl conformation dictated by the sequence of its amio acids.</p>
         </div>
         
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -68,14 +61,9 @@
               <img src="img/bigcell.jpg" class="img-responsive">
             </div>
             <div class="col-md-6">
-          <p>Beast above over, grass morning whose place heaven divided grass brought 
-          all morning subdue won't had his Good firmament light that fruitful, won't 
-          image light gathered, give fruit his whose stars over seed upon had grass 
-          darkness lesser dry, saw. Days two lesser that likeness every fruitful fruit 
-          us lesser every our face had all gathered sea us fourth midst seasons together
-          so don't of over fifth rule, beast after. The creeping face make creeping over
-          great. And midst female great moving day replenish their image them man thing 
-          own, let lights, years meat gathering she'd spirit fifth them living.</p>
+          <p>DNA is located in the nucleus of a cell. it is surrounded by a double membrane which also
+          contributes to its regulation by restricting movement in and out. The process of DNA 
+          replicationalso occurs here.</p>
             </div>
           </div>
         </div>
@@ -86,7 +74,18 @@
       <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12"><!--second row of columns-->
           <h3>The Structure of DNA</h3>
-          <img src="img/DNAMODEL.jpg" class="img-responsive">
+          <!--<img src="img/DNAMODEL.jpg" class="img-responsive">-->
+          <img src="img/DNAMODEL.jpg" width="362" height="362" alt="Insert Alt" usemap="#image_map" border="0">
+
+<map name="image_map" id="image_map">
+	<area shape="poly" data-name="helix,all" coords=" 132,81, 84,143, 111,158, 157,99, 135,80" color="red" href="#" alt="red hotspot"/>
+	<area shape="poly" data-name="nucleotide,all" coords=" 256,101, 235,95, 217,112, 214,127, 165,154, 180,169, 228,138, 246,138, 259,102" color="green" href="#" alt="green hotspot"/>
+	<area shape="poly" data-name="sugar,all" coords=" 100,232, 90,252, 106,270, 121,261, 122,241, 101,231" color="purple" href="#" alt="purple hotspot"/>
+	<area shape="poly" data-name="base,all" coords=" 126,56, 145,49, 152,32, 110,13, 64,31, 72,52, 125,59" color="yellow" href="#" alt="yellow hotspot"/>
+</map>
+<div id="extra-info">
+  <div id="explanation"
+</div>
         </div>
         
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -100,6 +99,15 @@
           own, let lights, years meat gathering she'd spirit fifth them living.</p>
           <img src="img/DNAMODELTOP.jpg" class="img-responsive">
         </div>
+      </div>
+      <div>
+        <h3>Why DNA is ideal to carry genetic information</h3>
+        <p>for almost 4 billions years DNA has been the carrier of genetic information. within that time
+        there has been virtually no change to its structure. in that same time millions of new species
+         have come and gone, eveolved much longer genmoes.</p>
+         <p>This longetivity stems from the structure of the DNA molecule. it is xtremely stable, under 
+         special conditions such as laco of oxygen, DNA can withstand very high and low temperatures, 
+         estremes in pressure and humidity.</p>
       </div>
     </div>
     
@@ -119,14 +127,46 @@
   </div> 
   
   <footer>
+      <div class="row">
+        <div class="col-xs-6">
     <h4>nvwirj iwfwij jfwehhfn ijfij iwj</h4>
+        </div>
+        <div class="col-xs-6">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="exampleInputName2">Name</label>
+          <input type="text" class="form-control" id="exampleInputName2"
+          placeholder="Name Namerson">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail2">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail2"
+          placeholder="email@example.com">
+        </div>
+        <button type="submit" class="btn btn-default">Spam</button>
+      </form>
+        </div>
+      </div>
   </footer>
     
+<script language="javascript">
+  $(document).ready(function(){
+    $('#image_map').mapster({
+      singleSelect:true,
+      render_highlight:{altImage:'images/shape2.gif'},
+      mapKey:'color'
+      fill:true,altImage:'images/shape3.gif',
+      fillOpacity:1,
+    });
+  });
+</script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+    <script language="javascript" src="http:ajax.googleapls.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script language="javascript" src="scripts/jquery.imagemapster.js"></script>
   </body>
     
     

@@ -26,7 +26,15 @@ button{
 
 
 /*index.html css*/
+#extra-info{
+    width:360;
+    height:120;
+    font-size:12px;
+}
 
+#explanation{
+    
+}
 /*end of index.html css*/
 
 
