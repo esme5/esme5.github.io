@@ -17,6 +17,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--script language="javascript" src="http://ajax.googleapls.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script-->
+    <script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+    <script src="js/dna.js"></script>
   </head>
     
     
@@ -47,11 +50,20 @@
     <!--Columns-->
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12"><!--first row of columns-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
           <h3>Purpose of DNA</h3>
-          <p>The information in the DNA of genes dictates, via a genetic code, the order 
-          of amino acids in a protein molecule. there are 20 ifferent amino acids. each chain 
-          folds into a specific three dimensioanl conformation dictated by the sequence of its amio acids.</p>
+          <p>DNA encodes all of the instructions our bodies require to keep us alive. When our bodies 
+          were being formed, our DNA instructed all of our cells to become a heart, a leg, hair follicles.
+          These instructions are encoded in the sequence of the DNA molecule. They eventually 
+          become proteins, complex structures also built by small blocks. These blocks are called 
+          amino acids. There are 20 different ones, each with different chemical characteristics 
+          that influence how a protein looks, its 3-dimensional shape. This shape is critical to the 
+          purpose of a protein, a deformation can lead to many diseases.</p>
+          <p>Making a protein is a complicated process that occurs in all living beings daily. There are 
+          many, many steps involved, and each one poses a risk of an error occuring. From the 
+          initial copying of the instructions (transcription) to the making of the proteins 
+          themselves (translation), as well as errors during meiosis (making new cells). We begin to 
+          understand the complexities of preserving and distributing those instructions.</p>
         </div>
         
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -61,9 +73,11 @@
               <img src="img/bigcell.jpg" class="img-responsive">
             </div>
             <div class="col-md-6">
-          <p>DNA is located in the nucleus of a cell. it is surrounded by a double membrane which also
-          contributes to its regulation by restricting movement in and out. The process of DNA 
-          replicationalso occurs here.</p>
+          <p>DNA is located in the nucleus of cells. The nucleus is surrounded by a double membrane, which also
+          contributes to its regulation by restricting the movement of molecules in and out. In the picture on the left,
+           the nucleus is white and the membrane is the light blue area surrounding it. (The purple 
+           area is called the Golgi apparatus and has another function altogether.)</p>
+           <p>The process of DNA replication occurs here.</p>
             </div>
           </div>
         </div>
@@ -72,22 +86,21 @@
         
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12"><!--second row of columns-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
           <h3>The Structure of DNA</h3>
-          <!--<img src="img/DNAMODEL.jpg" class="img-responsive">-->
-          <img src="img/DNAMODEL.jpg" width="362" height="362" alt="Insert Alt" usemap="#image_map" border="0">
+          <img id="dnamodel" src="img/DNAMODEL.jpg" width="362" height="362" usemap="#image_map" border="0">
 
 <map name="image_map" id="image_map">
-	<area shape="poly" data-name="helix,all" coords=" 132,81, 84,143, 111,158, 157,99, 135,80" color="red" href="#" alt="red hotspot"/>
-	<area shape="poly" data-name="nucleotide,all" coords=" 256,101, 235,95, 217,112, 214,127, 165,154, 180,169, 228,138, 246,138, 259,102" color="green" href="#" alt="green hotspot"/>
-	<area shape="poly" data-name="sugar,all" coords=" 100,232, 90,252, 106,270, 121,261, 122,241, 101,231" color="purple" href="#" alt="purple hotspot"/>
-	<area shape="poly" data-name="base,all" coords=" 126,56, 145,49, 152,32, 110,13, 64,31, 72,52, 125,59" color="yellow" href="#" alt="yellow hotspot"/>
+	<area shape="poly" data-name="helix,all" coords=" 132,81, 84,143, 111,158, 157,99, 135,80" href="#" alt="red hotspot"/>
+	<area shape="poly" data-name="nucleotide,all" coords=" 256,101, 235,95, 217,112, 214,127, 165,154, 180,169, 228,138, 246,138, 259,102" href="#" alt="green hotspot"/>
+	<area shape="poly" data-name="sugar,all" coords=" 100,232, 90,252, 106,270, 121,261, 122,241, 101,231" href="#" alt="purple hotspot"/>
+	<area shape="poly" data-name="base,all" coords=" 126,56, 145,49, 152,32, 110,13, 64,31, 72,52, 125,59" href="#" alt="yellow hotspot"/>
 </map>
-<div id="extra-info">
-  <div id="explanation"
-</div>
-        </div>
-        
+  <div id="explanation">
+    <div id="caption-header"></div>
+    <div id="caption-text"></div>
+  </div>
+</div>        
         <div class="col-md-6 col-sm-6 col-xs-12">
           <p>Beast above over, grass morning whose place heaven divided grass brought 
           all morning subdue won't had his Good firmament light that fruitful, won't 
@@ -149,24 +162,15 @@
       </div>
   </footer>
     
-<script language="javascript">
-  $(document).ready(function(){
-    $('#image_map').mapster({
-      singleSelect:true,
-      render_highlight:{altImage:'images/shape2.gif'},
-      mapKey:'color'
-      fill:true,altImage:'images/shape3.gif',
-      fillOpacity:1,
-    });
-  });
-</script>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
-    <script language="javascript" src="http:ajax.googleapls.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script language="javascript" src="scripts/jquery.imagemapster.js"></script>
+    <!--script language="javascript" src="http://ajax.googleapls.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script-->
+    <script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+    <script src="js/dna.js"></script>
   </body>
     
     

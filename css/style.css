@@ -33,7 +33,17 @@ button{
 }
 
 #explanation{
-    
+    clear:both;
+    border:1px solid black;
+    width:350;
+    padding:6px;
+    display:none;
+}
+
+#caption-header{
+    font-style:italic;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 /*end of index.html css*/
 
