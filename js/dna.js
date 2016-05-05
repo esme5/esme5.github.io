@@ -5,7 +5,7 @@
 // remove the captions, and also set a flag to let the other code know if we're currently in an area.
 
 var inArea,
-    map = $('#image_map'),
+    map = $('#dnamodel'),
     captions = {
         helix: ["Double Helix",
             "Paul McCartney's song, Yesterday, recently voted the most popular song "
