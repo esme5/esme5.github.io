@@ -1,3 +1,26 @@
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#cartoonVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModal").on('hide.bs.modal', function(){
+        $("#cartoonVideo").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#myModal").on('show.bs.modal', function(){
+        $("#cartoonVideo").attr('src', url);
+    });
+});
+
+
+
+
+
+
 // Set up some options objects: 'single_opts' for when a single area is selected, which will show just a border
 // 'all_opts' for when all are highlighted, to use a different effect - shaded white with a white border
 // 'initial_opts' for general options that apply to the whole mapster. 'initial_opts' also includes callbacks
@@ -72,3 +95,5 @@ var inArea,
                 map.mapster('set', false, 'all');
             }
         });
+
+

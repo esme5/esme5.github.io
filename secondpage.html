@@ -17,6 +17,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
     
     
@@ -69,10 +71,26 @@ synthesizes the new DNA by adding complementary nucleotides to the template stra
         
         <div class="col-md-12 col-sm-12 col-xs-12">
           <img src="img/REPLICATION.png" class="col-md-6 img-responsive">
-          <video width="320" height="240" controls class="col-md-6 img-responsive">
-            <source src="img/DNAReplicationBasic_w_FX.mp4" type="video/mp4">
-            Your browser does not support the video tag
-          </video>
+          
+      <div class="bs-example">
+    <!-- Button HTML (to Trigger Modal) -->
+    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Launch Video</a>
+    
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Replication Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe id="cartoonVideo" width="560" height="315" src="img/DNAReplicationBasic_w_FX.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+          
 
           
         </div>
@@ -192,6 +210,7 @@ protein which binds to this sequence to physically stop DNA replication."
     <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/dna.js"></script>
     
   </body>
     
